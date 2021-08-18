@@ -48,5 +48,25 @@ namespace GolfTrack.Services
                 return query.ToArray();
             }
         }
+
+        public CourseDetail GetCourseById (int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Courses
+                        .Single(e => e.CourseId == id);
+                return
+                    new CourseDetail
+                    {
+                        CourseId = entity.CourseId,
+                        Name = entity.Name,
+                        Holes = entity.Holes,
+                        TypeOfCourse = entity.TypeOfCourse,
+                        Par = entity.Par
+                    };
+            }
+        }
     }
 }

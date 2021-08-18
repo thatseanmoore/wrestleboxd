@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CourseCreate.cs" />
+    <Compile Include="CourseDetail.cs" />
     <Compile Include="CourseListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

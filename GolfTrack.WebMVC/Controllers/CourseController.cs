@@ -46,7 +46,14 @@ namespace GolfTrack.WebMVC.Controllers
             ModelState.AddModelError("", "Course could not be created.");
 
             return View(model);
+        }
 
+        public ActionResult Details (int id)
+        {
+            var service = new CourseService();
+            var model = service.GetCourseById(id);
+
+            return View(model);
         }
     }
 }
