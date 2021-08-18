@@ -55,5 +55,68 @@ namespace GolfTrack.WebMVC.Controllers
 
             return View(model);
         }
+
+        public ActionResult Edit (int id)
+        {
+            var service = new CourseService();
+            var detail = service.GetCourseById(id);
+            var model =
+                new CourseEdit
+                {
+                    CourseId = detail.CourseId,
+                    Name = detail.Name,
+                    Holes = detail.Holes,
+                    TypeOfCourse = detail.TypeOfCourse,
+                    Par = detail.Par
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, CourseEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.CourseId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = new CourseService();
+
+            if (service.UpdateCourse(model))
+            {
+                TempData["SaveResult"] = "Your note was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your note could not be updated.");
+            return View();
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = new CourseService();
+            var model = svc.GetCourseById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteCourse(int id)
+        {
+            var service = new CourseService();
+
+            service.DeleteCourse(id);
+
+            TempData["SaveResult"] = "Your note was deleted";
+
+            return RedirectToAction("Index");
+        }
     }
 }

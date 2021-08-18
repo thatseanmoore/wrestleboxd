@@ -68,5 +68,38 @@ namespace GolfTrack.Services
                     };
             }
         }
+
+        public bool UpdateCourse(CourseEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Courses
+                        .Single(e => e.CourseId == model.CourseId);
+
+                entity.Name = model.Name;
+                entity.Holes = model.Holes;
+                entity.TypeOfCourse = model.TypeOfCourse;
+                entity.Par = model.Par;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteCourse(int courseId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Courses
+                        .Single(e => e.CourseId == courseId);
+
+                ctx.Courses.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
