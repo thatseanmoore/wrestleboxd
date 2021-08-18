@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CourseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GolfTrack.Data\GolfTrack.Data.csproj">
+      <Project>{6712a4f5-0ba9-42ee-a851-d7e0a8f6c4a1}</Project>
+      <Name>GolfTrack.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GolfTrack.Models\GolfTrack.Models.csproj">
+      <Project>{a9269726-db8a-4ffd-87ef-f638578f50a8}</Project>
+      <Name>GolfTrack.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
