@@ -56,6 +56,15 @@
   <ItemGroup>
     <Compile Include="Course.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202108171733313_InitialCreate.cs" />
+    <Compile Include="Migrations\202108171733313_InitialCreate.Designer.cs">
+      <DependentUpon>202108171733313_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108191940333_Adding FK for Course and Score.cs" />
+    <Compile Include="Migrations\202108191940333_Adding FK for Course and Score.Designer.cs">
+      <DependentUpon>202108191940333_Adding FK for Course and Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
     <Compile Include="Score.cs" />
@@ -63,6 +72,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202108171733313_InitialCreate.resx">
+      <DependentUpon>202108171733313_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108191940333_Adding FK for Course and Score.resx">
+      <DependentUpon>202108191940333_Adding FK for Course and Score.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
