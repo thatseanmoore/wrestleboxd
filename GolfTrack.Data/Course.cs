@@ -19,5 +19,9 @@ namespace GolfTrack.Data
         public string TypeOfCourse { get; set; }
         [Required]
         public int Par { get; set; }
+
+        public virtual ICollection<Rating> ListOfRatings { get; set; } = new List<Rating>();
+
+        public virtual ICollection<Score> ListOfScores { get; set; } = new List<Score>();
     }
 }
