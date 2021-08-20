@@ -88,11 +88,11 @@ namespace GolfTrack.WebMVC.Controllers
 
             if (service.UpdateCourse(model))
             {
-                TempData["SaveResult"] = "Your note was updated.";
+                TempData["SaveResult"] = "Your course was updated.";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "Your note could not be updated.");
+            ModelState.AddModelError("", "Your course could not be updated.");
             return View();
         }
 
@@ -114,7 +114,7 @@ namespace GolfTrack.WebMVC.Controllers
 
             service.DeleteCourse(id);
 
-            TempData["SaveResult"] = "Your note was deleted";
+            TempData["SaveResult"] = "Your course was deleted";
 
             return RedirectToAction("Index");
         }
