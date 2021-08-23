@@ -1,4 +1,4 @@
-﻿@model GolfTrack.Models.RatingDetail
+﻿@model GolfTrack.Models.ScoreDetail
 
 @{
     ViewBag.Title = "Details";
@@ -7,31 +7,31 @@
 <h2>Details</h2>
 
 <div>
-    <h4>RatingDetail</h4>
+    <h4>ScoreDetail</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.RatingId)
+            @Html.DisplayNameFor(model => model.ScoreId)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RatingId)
+            @Html.DisplayFor(model => model.ScoreId)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Stars)
+            @Html.DisplayNameFor(model => model.TotalScore)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Stars)
+            @Html.DisplayFor(model => model.TotalScore)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Review)
+            @Html.DisplayNameFor(model => model.RoundDate)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Review)
+            @Html.DisplayFor(model => model.Name)
         </dd>
 
         <dt>
@@ -39,7 +39,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.RoundDate)
         </dd>
 
         <dt>
@@ -53,6 +53,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.RatingId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ScoreId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

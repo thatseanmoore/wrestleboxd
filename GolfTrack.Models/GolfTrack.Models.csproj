@@ -63,6 +63,10 @@
     <Compile Include="RatingDetail.cs" />
     <Compile Include="RatingEdit.cs" />
     <Compile Include="RatingListItem.cs" />
+    <Compile Include="ScoreCreate.cs" />
+    <Compile Include="ScoreDetail.cs" />
+    <Compile Include="ScoreEdit.cs" />
+    <Compile Include="ScoreListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,6 +11,7 @@ namespace GolfTrack.Models
         public int RatingId { get; set; }
         public int Stars { get; set; }
         public string Review { get; set; }
+        public string Name { get; set; }
         public int CourseId { get; set; }
     }
 }
