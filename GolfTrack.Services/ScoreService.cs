@@ -8,47 +8,47 @@ using System.Threading.Tasks;
 
 namespace GolfTrack.Services
 {
-    public class RatingService
+    public class ScoreService
     {
         private readonly Guid _userId;
 
-        public RatingService(Guid userId)
+        public ScoreService(Guid userId)
         {
             _userId = userId;
         }
 
-        public bool CreateRating(RatingCreate model)
+        public bool CreateScore(ScoreCreate model)
         {
             var entity =
-                new Rating()
+                new Score()
                 {
-                    Stars = model.Stars,
-                    Review = model.Review,
+                    TotalScore = model.TotalScore,
+                    RoundDate = model.RoundDate,
                     CourseId = model.CourseId,
                     UserId = _userId
                 };
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Ratings.Add(entity);
+                ctx.Scores.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public IEnumerable<RatingListItem> GetRatings()
+        public IEnumerable<ScoreListItem> GetScores()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =
                     ctx
-                        .Ratings
+                        .Scores
                         .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
-                                new RatingListItem
+                                new ScoreListItem
                                 {
-                                    RatingId = e.RatingId,
-                                    Stars = e.Stars,
+                                    ScoreId = e.ScoreId,
+                                    TotalScore = e.TotalScore,
                                     Name = e.Course.Name,
                                     CourseId = e.CourseId
                                 }
@@ -58,56 +58,55 @@ namespace GolfTrack.Services
             }
         }
 
-        public RatingDetail GetRatingById(int id)
+        public ScoreDetail GetScoreById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                        .Ratings
-                        .Single(e => e.RatingId == id && e.UserId == _userId);
+                        .Scores
+                        .Single(e => e.ScoreId == id && e.UserId == _userId);
                 return
-                    new RatingDetail
+                    new ScoreDetail
                     {
-                        RatingId = entity.RatingId,
-                        Stars = entity.Stars,
-                        Review = entity.Review,
+                        ScoreId = entity.ScoreId,
+                        TotalScore = entity.TotalScore,
+                        RoundDate = entity.RoundDate,
                         Name = entity.Course.Name,
                         CourseId = entity.CourseId
                     };
             }
         }
 
-        public bool UpdateRating(RatingEdit model)
+        public bool UpdateScore(ScoreEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                        .Ratings
-                        .Single(e => e.RatingId == model.RatingId && e.UserId == _userId);
+                        .Scores
+                        .Single(e => e.ScoreId == model.ScoreId && e.UserId == _userId);
 
-                entity.Stars = model.Stars;
-                entity.Review = model.Review;
+                entity.TotalScore = model.TotalScore;
+                entity.RoundDate = model.RoundDate;
 
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public bool DeleteRating(int ratingId)
+        public bool DeleteScore(int scoreId)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                        .Ratings
-                        .Single(e => e.RatingId == ratingId && e.UserId == _userId);
+                        .Scores
+                        .Single(e => e.ScoreId == scoreId && e.UserId == _userId);
 
-                ctx.Ratings.Remove(entity);
+                ctx.Scores.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }
         }
-
     }
 }

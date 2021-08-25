@@ -55,8 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CourseService.cs" />
+    <Compile Include="HoleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatingService.cs" />
+    <Compile Include="ScoreService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

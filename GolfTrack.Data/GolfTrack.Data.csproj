@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Course.cs" />
+    <Compile Include="Hole.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202108171733313_InitialCreate.cs" />
     <Compile Include="Migrations\202108171733313_InitialCreate.Designer.cs">
@@ -63,6 +64,10 @@
     <Compile Include="Migrations\202108191940333_Adding FK for Course and Score.cs" />
     <Compile Include="Migrations\202108191940333_Adding FK for Course and Score.Designer.cs">
       <DependentUpon>202108191940333_Adding FK for Course and Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108251618562_Added Holes Table.cs" />
+    <Compile Include="Migrations\202108251618562_Added Holes Table.Designer.cs">
+      <DependentUpon>202108251618562_Added Holes Table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108191940333_Adding FK for Course and Score.resx">
       <DependentUpon>202108191940333_Adding FK for Course and Score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108251618562_Added Holes Table.resx">
+      <DependentUpon>202108251618562_Added Holes Table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

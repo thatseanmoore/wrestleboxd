@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace GolfTrack.Models
 {
-    public class RatingListItem
+    public class ScoreListItem
     {
-        public int RatingId { get; set; }
-        public int Stars { get; set; }
+        public int ScoreId { get; set; }
+        public int TotalScore { get; set; }
         public string Name { get; set; }
         public int CourseId { get; set; }
     }

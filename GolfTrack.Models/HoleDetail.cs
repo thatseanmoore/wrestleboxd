@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace GolfTrack.Models
 {
-    public class RatingListItem
+    public class HoleDetail
     {
-        public int RatingId { get; set; }
-        public int Stars { get; set; }
+        public int HoleId { get; set; }
+        public int HoleNumber { get; set; }
+        public int Par { get; set; }
+        public int Yards { get; set; }
         public string Name { get; set; }
         public int CourseId { get; set; }
+
     }
 }
