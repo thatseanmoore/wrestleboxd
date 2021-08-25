@@ -258,6 +258,7 @@
     <Content Include="Views\Hole\Details.cshtml" />
     <Content Include="Views\Hole\Edit.cshtml" />
     <Content Include="Views\Hole\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
