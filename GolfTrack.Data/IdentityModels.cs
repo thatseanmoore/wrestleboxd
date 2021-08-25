@@ -38,6 +38,8 @@ namespace GolfTrack.Data
 
         public DbSet<Score> Scores { get; set; }
 
+        public DbSet<Hole> Holes { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

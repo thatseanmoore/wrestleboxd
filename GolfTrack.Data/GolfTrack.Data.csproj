@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Course.cs" />
+    <Compile Include="Hole.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\202108171733313_InitialCreate.cs" />
     <Compile Include="Migrations\202108171733313_InitialCreate.Designer.cs">

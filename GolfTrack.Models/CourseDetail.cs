@@ -15,5 +15,7 @@ namespace GolfTrack.Models
         [Display(Name="Type Of Course")]
         public string TypeOfCourse { get; set; }
         public int Par { get; set; }
+        public double AverageRating { get; set; }
+        public double AverageScore { get; set; }
     }
 }

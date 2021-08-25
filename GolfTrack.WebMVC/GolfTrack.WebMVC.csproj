@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\HoleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RatingController.cs" />
@@ -252,6 +253,8 @@
     <Content Include="Views\Score\Details.cshtml" />
     <Content Include="Views\Score\Edit.cshtml" />
     <Content Include="Views\Score\Delete.cshtml" />
+    <Content Include="Views\Hole\Index.cshtml" />
+    <Content Include="Views\Hole\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

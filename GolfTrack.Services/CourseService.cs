@@ -57,14 +57,38 @@ namespace GolfTrack.Services
                     ctx
                         .Courses
                         .Single(e => e.CourseId == id);
-                return
+                        double averageRating = new double();
+                        double countRating = 0;
+                        double totalRating = 0;
+
+                        double averageScore = new double();
+                        double countScore = 0;
+                        double totalScore = 0;
+
+                        foreach ( var rating in entity.ListOfRatings)
+                        {
+
+                            totalRating += rating.Stars;
+                            countRating += 1;
+                        }
+                        foreach ( var score in entity.ListOfScores)
+                        {
+                            totalScore += score.TotalScore;
+                            countScore += 1;
+                        }
+                    averageRating = totalRating / countRating;
+                    averageScore = totalScore / countScore;
+
+                    return
                     new CourseDetail
                     {
                         CourseId = entity.CourseId,
                         Name = entity.Name,
                         Holes = entity.Holes,
                         TypeOfCourse = entity.TypeOfCourse,
-                        Par = entity.Par
+                        Par = entity.Par,
+                        AverageRating = averageRating,
+                        AverageScore = averageScore
                     };
             }
         }
