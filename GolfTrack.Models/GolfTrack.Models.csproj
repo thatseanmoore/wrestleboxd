@@ -59,6 +59,8 @@
     <Compile Include="CourseEdit.cs" />
     <Compile Include="CourseListItem.cs" />
     <Compile Include="HoleCreate.cs" />
+    <Compile Include="HoleDetail.cs" />
+    <Compile Include="HoleEdit.cs" />
     <Compile Include="HoleListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RatingCreate.cs" />

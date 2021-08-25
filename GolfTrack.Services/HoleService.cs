@@ -10,22 +10,15 @@ namespace GolfTrack.Services
 {
     public class HoleService
     {
-        private readonly Guid _userId;
-
-        public HoleService(Guid userId)
-        {
-            _userId = userId;
-        }
-
         public bool CreateHole(HoleCreate model)
         {
             var entity =
                 new Hole()
                 {
-                    Stars = model.Stars,
-                    Review = model.Review,
-                    CourseId = model.CourseId,
-                    UserId = _userId
+                    HoleNumber = model.HoleNumber,
+                    Par = model.Par,
+                    Yards = model.Yards,
+                    CourseId = model.CourseId
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -42,13 +35,36 @@ namespace GolfTrack.Services
                 var query =
                     ctx
                         .Holes
-                        .Where(e => e.UserId == _userId)
                         .Select(
                             e =>
                                 new HoleListItem
                                 {
-                                    RatingId = e.RatingId,
-                                    Stars = e.Stars,
+                                    HoleId = e.HoleId,
+                                    HoleNumber = e.HoleNumber,
+                                    Par = e.Par
+                                }
+                        );
+
+                return query.ToArray();
+            }
+        }
+
+        public IEnumerable<HoleDetail> GetHolesByCourseId(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query =
+                    ctx
+                        .Holes
+                        .Where(e => e.CourseId == id)
+                        .Select(
+                            e =>
+                                new HoleDetail
+                                {
+                                    HoleId = e.HoleId,
+                                    HoleNumber = e.HoleNumber,
+                                    Par = e.Par,
+                                    Yards = e.Yards,
                                     Name = e.Course.Name,
                                     CourseId = e.CourseId
                                 }
@@ -57,5 +73,61 @@ namespace GolfTrack.Services
                 return query.ToArray();
             }
         }
+
+        public HoleDetail GetHoleById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Holes
+                        .Single(e => e.HoleId == id);
+
+                return
+                new HoleDetail
+                {
+                    HoleId = entity.HoleId,
+                    HoleNumber = entity.HoleNumber,
+                    Par = entity.Par,
+                    Yards = entity.Yards,
+                    Name = entity.Course.Name,
+                    CourseId = entity.CourseId
+                };
+            }
+        }
+
+        public bool UpdateHole(HoleEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Holes
+                        .Single(e => e.HoleId == model.HoleId);
+
+                entity.HoleNumber = model.HoleNumber;
+                entity.Par = model.Par;
+                entity.Yards = model.Yards;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteHole(int holeId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Holes
+                        .Single(e => e.HoleId == holeId);
+
+                ctx.Holes.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+
     }
 }
