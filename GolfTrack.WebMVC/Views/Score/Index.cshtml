@@ -29,6 +29,9 @@
             @Html.DisplayNameFor(model => model.TotalScore)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.IsFavorited)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
@@ -47,6 +50,9 @@
             @Html.DisplayFor(modelItem => item.TotalScore)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.IsFavorited , new { Id = item.ScoreId })
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
@@ -61,3 +67,30 @@
     }
 
 </table>
+
+@section scripts {
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        $("i[data-toggle='heart']")
+            .css({ "cursor": "pointer" })
+            .click(function (e) {
+                var target = $(e.target);
+                var scoreId = target.attr("data-id");
+                var heartSet = target.hasClass("glyphicon-heart");
+
+                $.ajax({
+                    method: heartSet ? "DELETE" : "PUT",
+                    url: "api/score/" + scoreId + "/heart",
+                    data: null
+                })
+                .done(function (r) {
+                    target.removeClass();
+                    target.addClass("glyphicon " + (heartSet ? "glyphicon-heart-empty" : "glyphicon-heart"));
+                })
+                .fail(function (r) {
+                    alert("Failed to change heart status");
+                });
+            });
+    });
+</script>
+}

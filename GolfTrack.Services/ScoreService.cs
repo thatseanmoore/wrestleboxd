@@ -49,6 +49,7 @@ namespace GolfTrack.Services
                                 {
                                     ScoreId = e.ScoreId,
                                     TotalScore = e.TotalScore,
+                                    IsFavorited = e.IsFavorited,
                                     Name = e.Course.Name,
                                     CourseId = e.CourseId
                                 }
@@ -89,6 +90,7 @@ namespace GolfTrack.Services
 
                 entity.TotalScore = model.TotalScore;
                 entity.RoundDate = model.RoundDate;
+                entity.IsFavorited = model.IsFavorited;
 
                 return ctx.SaveChanges() == 1;
             }

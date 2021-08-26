@@ -11,5 +11,6 @@ namespace GolfTrack.Models
         public int ScoreId { get; set; }
         public int TotalScore { get; set; }
         public DateTimeOffset RoundDate { get; set; }
+        public bool IsFavorited { get; set; }
     }
 }
