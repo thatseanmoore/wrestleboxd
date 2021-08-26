@@ -41,7 +41,8 @@ namespace GolfTrack.Services
                                 {
                                     HoleId = e.HoleId,
                                     HoleNumber = e.HoleNumber,
-                                    Par = e.Par
+                                    Par = e.Par,
+                                    Name = e.Course.Name
                                 }
                         );
 

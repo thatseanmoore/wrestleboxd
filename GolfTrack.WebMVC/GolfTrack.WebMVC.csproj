@@ -271,6 +271,7 @@
     <Content Include="Views\Hole\Delete.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Favorited.cshtml" />
+    <Content Include="Views\Hole\CourseDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
