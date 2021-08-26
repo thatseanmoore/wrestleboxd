@@ -49,6 +49,15 @@ namespace GolfTrack.WebMVC.Controllers
             return View(model);
         }
 
+        // GET: Holes By Course
+        public ActionResult CourseDetails(int id)
+        {
+            var service = new HoleService();
+            var model = service.GetHolesByCourseId(id);
+
+            return View(model);
+        }
+
         public ActionResult Details(int id)
         {
             var service = new HoleService();
