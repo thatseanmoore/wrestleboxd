@@ -1,4 +1,4 @@
-# H1 Golf Track
+# Golf Track
 ## Web MVC Application by Nick Alcock
 
 You can check out V1 here: https://golftrack.azurewebsites.net/
