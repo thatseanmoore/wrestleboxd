@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('Assets/mowingpattern.jpg' );
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,64 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+h2 {
+    color: #f3ec99;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: #f3ec99;
+}
+.card {
+    color: #5c6f42;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 3px 0 3px 0px;
+    margin-bottom: 15px;
+}
+
+.card-body h4{
+    color: black;
+}
+
+.card-img-overlay {
+    position:absolute;
+    border-radius: calc(.25ren - 1px)
+}
+
+.about {
+    background-color: white;
+    width: 50%;
+    padding: 15px 15px 5px 20px;
+    border-radius: 25px;
+}
+
+.card-text{
+    text-align:center;
+    border: 1px solid black;
+}
+
+.dl-horizontal {
+    color: #f3ec99;
+                
+}
+
+.form-group {
+    color: #f3ec99;
+}
+
+.table {
+    background-color: white;
+}
+
+#socialLoginForm {
+    color: #f3ec99;
+}
+
+

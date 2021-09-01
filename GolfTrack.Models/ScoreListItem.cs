@@ -10,10 +10,12 @@ namespace GolfTrack.Models
     public class ScoreListItem
     {
         public int ScoreId { get; set; }
+        [Display(Name = "Total Score")]
         public int TotalScore { get; set; }
         [UIHint("Favorited")]
-        [Display(Name = "Favorite")]
+        [Display(Name = "Favorite Round")]
         public bool IsFavorited { get; set; }
+        [Display(Name = "Course Name")]
         public string Name { get; set; }
         public int CourseId { get; set; }
     }
