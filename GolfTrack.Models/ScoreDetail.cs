@@ -12,7 +12,9 @@ namespace GolfTrack.Models
         public int ScoreId { get; set; }
         [Display(Name="Score")]
         public int TotalScore { get; set; }
+        [Display(Name = "Round Date")]
         public DateTimeOffset RoundDate { get; set; }
+        [Display(Name = "Course Name")]
         public string Name { get; set; }
         public int CourseId { get; set; }
     }

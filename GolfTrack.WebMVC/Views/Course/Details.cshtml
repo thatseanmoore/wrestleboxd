@@ -4,71 +4,76 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>CourseDetail</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.CourseId)
-        </dt>
+    <h2>Course Details</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.CourseId)
-        </dd>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.CourseId)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Holes)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Holes)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Holes)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TypeOfCourse)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Holes)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.TypeOfCourse)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.TypeOfCourse)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Par)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TypeOfCourse)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Par)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Par)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AverageRating)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Par)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.AverageRating)
-        </dd>
+        </dl>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AverageScore)
-        </dt>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <h4>@Html.DisplayNameFor(model => model.AverageRating)</h4>
+                    @Html.DisplayFor(model => model.AverageRating)
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <h4>@Html.DisplayNameFor(model => model.AverageScore)</h4>
+                    @Html.DisplayFor(model => model.AverageScore)
+                </div>
+            </div>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.AverageScore)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CourseId }) |
+        @Html.ActionLink("Holes", "../Hole/CourseDetails", new { id = Model.CourseId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>

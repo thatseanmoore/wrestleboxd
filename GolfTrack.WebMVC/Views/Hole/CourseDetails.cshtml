@@ -4,16 +4,13 @@
     ViewBag.Title = "CourseDetails";
 }
 
-<h2>CourseDetails</h2>
+<h2>Golf Course Holes</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.HoleId)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.HoleNumber)
         </th>
@@ -34,9 +31,7 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.HoleId)
-        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.HoleNumber)
         </td>
