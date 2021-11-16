@@ -296,17 +296,17 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GolfTrack.Data\GolfTrack.Data.csproj">
+    <ProjectReference Include="..\GolfTrack.Data\WrestleBoxd.Data.csproj">
       <Project>{6712a4f5-0ba9-42ee-a851-d7e0a8f6c4a1}</Project>
-      <Name>GolfTrack.Data</Name>
+      <Name>WrestleBoxd.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GolfTrack.Models\GolfTrack.Models.csproj">
+    <ProjectReference Include="..\GolfTrack.Models\WrestleBoxd.Models.csproj">
       <Project>{a9269726-db8a-4ffd-87ef-f638578f50a8}</Project>
-      <Name>GolfTrack.Models</Name>
+      <Name>WrestleBoxd.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GolfTrack.Services\GolfTrack.Services.csproj">
+    <ProjectReference Include="..\GolfTrack.Services\WrestleBoxd.Services.csproj">
       <Project>{8f60c210-537b-49d4-99e0-23f3909be76a}</Project>
-      <Name>GolfTrack.Services</Name>
+      <Name>WrestleBoxd.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
