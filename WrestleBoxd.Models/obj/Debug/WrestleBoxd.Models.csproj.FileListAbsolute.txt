@@ -3,12 +3,15 @@ C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\GolfTrack.Mode
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\GolfTrack.Models.pdb
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\EntityFramework.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\GolfTrack.Data.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\System.Web.Http.dll
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\GolfTrack.Data.pdb
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\GolfTrack.Data.dll.config
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\EntityFramework.xml
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml

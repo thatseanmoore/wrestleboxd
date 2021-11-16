@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.WebMVC", "GolfTrack.WebMVC\WrestleBoxd.WebMVC.csproj", "{034B9C93-4E6F-48E6-83EB-6FED07C617FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.WebMVC", "WrestleBoxd.WebMVC\WrestleBoxd.WebMVC.csproj", "{034B9C93-4E6F-48E6-83EB-6FED07C617FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Data", "WrestleBoxd.Data\WrestleBoxd.Data.csproj", "{6712A4F5-0BA9-42EE-A851-D7E0A8F6C4A1}"
 EndProject

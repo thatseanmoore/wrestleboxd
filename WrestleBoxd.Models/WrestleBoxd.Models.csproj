@@ -88,5 +88,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WrestleBoxd.Data\WrestleBoxd.Data.csproj">
+      <Project>{6712a4f5-0ba9-42ee-a851-d7e0a8f6c4a1}</Project>
+      <Name>WrestleBoxd.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

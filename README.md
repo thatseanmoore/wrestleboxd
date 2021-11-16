@@ -4,7 +4,7 @@
 
 
 ### Version 1.0
-- Allows users to put together matches from a few preset selections and opten options. 
+- Allows users to put together matches from a few preset selections and open options. 
 
 ### The Future
 - 
