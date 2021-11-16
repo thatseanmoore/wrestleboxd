@@ -27,3 +27,7 @@ C:\Users\Sean\Source\Repos\GolfTrack\GolfTrack.Services\obj\Debug\WrestleBoxd.Se
 C:\Users\Sean\Source\Repos\GolfTrack\GolfTrack.Services\obj\Debug\WrestleBoxd.Services.csproj.CopyComplete
 C:\Users\Sean\Source\Repos\GolfTrack\GolfTrack.Services\obj\Debug\GolfTrack.Services.dll
 C:\Users\Sean\Source\Repos\GolfTrack\GolfTrack.Services\obj\Debug\GolfTrack.Services.pdb
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Services\obj\Debug\WrestleBoxd.Services.csproj.AssemblyReference.cache
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Services\obj\Debug\WrestleBoxd.Services.csproj.CoreCompileInputs.cache
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Services\obj\Debug\GolfTrack.Services.dll
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Services\obj\Debug\GolfTrack.Services.pdb

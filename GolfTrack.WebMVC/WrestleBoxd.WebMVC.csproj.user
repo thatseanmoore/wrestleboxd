@@ -10,6 +10,9 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>C:\Users\Sean\source\repos\GolfTrack\;C:\Users\Sean\source\repos\GolfTrack\WrestleBoxd.Data\;C:\Users\Sean\source\repos\GolfTrack\WrestleBoxd.Models\;C:\Users\Sean\source\repos\GolfTrack\WrestleBoxd.Services\</ReferencePath>
+  </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">

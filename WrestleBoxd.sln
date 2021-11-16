@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.WebMVC", "GolfTrack.WebMVC\WrestleBoxd.WebMVC.csproj", "{034B9C93-4E6F-48E6-83EB-6FED07C617FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Data", "GolfTrack.Data\WrestleBoxd.Data.csproj", "{6712A4F5-0BA9-42EE-A851-D7E0A8F6C4A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Data", "WrestleBoxd.Data\WrestleBoxd.Data.csproj", "{6712A4F5-0BA9-42EE-A851-D7E0A8F6C4A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Models", "GolfTrack.Models\WrestleBoxd.Models.csproj", "{A9269726-DB8A-4FFD-87EF-F638578F50A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Models", "WrestleBoxd.Models\WrestleBoxd.Models.csproj", "{A9269726-DB8A-4FFD-87EF-F638578F50A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Services", "GolfTrack.Services\WrestleBoxd.Services.csproj", "{8F60C210-537B-49D4-99E0-23F3909BE76A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrestleBoxd.Services", "WrestleBoxd.Services\WrestleBoxd.Services.csproj", "{8F60C210-537B-49D4-99E0-23F3909BE76A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

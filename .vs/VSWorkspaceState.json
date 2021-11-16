@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\GolfTrack.WebMVC",
+    "\\GolfTrack.WebMVC\\Content",
     "\\GolfTrack.WebMVC\\Views",
     "\\GolfTrack.WebMVC\\Views\\Home"
   ],
-  "SelectedNode": "\\GolfTrack.WebMVC\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\GolfTrack.WebMVC\\Content\\Site.css",
   "PreviewInSolutionExplorer": false
 }
