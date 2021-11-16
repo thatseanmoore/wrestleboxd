@@ -1,0 +1,57 @@
+﻿@model GolfTrack.Models.ScoreDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Rating Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ScoreId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScoreId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoundDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoundDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ScoreId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

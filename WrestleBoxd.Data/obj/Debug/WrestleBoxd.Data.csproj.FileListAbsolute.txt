@@ -17,6 +17,7 @@ C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\bin\Debug\Newtonsoft.Json.
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\bin\Debug\System.Web.Http.xml
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\obj\Debug\WrestleBoxd.Data.csproj.AssemblyReference.cache
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\obj\Debug\GolfTrack.Data.Migrations.InitialCreate.resources
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\obj\Debug\GolfTrack.Data.Migrations.AddingFKforCourseandScore.resources
 C:\Users\Sean\Source\Repos\GolfTrack\WrestleBoxd.Data\obj\Debug\GolfTrack.Data.Migrations.AddedHolesTable.resources
