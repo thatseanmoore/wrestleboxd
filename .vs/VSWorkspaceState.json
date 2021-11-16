@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\GolfTrack.WebMVC",
-    "\\GolfTrack.WebMVC\\App_Start",
-    "\\GolfTrack.WebMVC\\Content",
-    "\\GolfTrack.WebMVC\\Views",
-    "\\GolfTrack.WebMVC\\Views\\Home",
-    "\\WrestleBoxd.Services",
-    "\\WrestleBoxd.Services\\App_Start"
+    ""
   ],
-  "SelectedNode": "\\GolfTrack.WebMVC\\App_Start\\RouteConfig.cs",
+  "SelectedNode": "\\WrestleBoxd.sln",
   "PreviewInSolutionExplorer": false
 }
